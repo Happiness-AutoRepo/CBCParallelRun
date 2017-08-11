@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="31" started-at="2017-08-10T04:27:24Z" finished-at="2017-08-10T04:27:24Z">
+    <groups>
+      <group name="Regression">
+        <method signature="Regression.f()[pri:0, instance:mmm.Regression@29774679]" name="f" class="mmm.Regression"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="Smoke.f()[pri:0, instance:mmm.Smoke@26653222]" name="f" class="mmm.Smoke"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Test" duration-ms="31" started-at="2017-08-10T04:27:24Z" finished-at="2017-08-10T04:27:24Z">
+      <class name="mmm.Smoke">
+        <test-method status="PASS" signature="f()[pri:0, instance:mmm.Smoke@26653222]" name="f" duration-ms="0" started-at="2017-08-10T00:27:24Z" finished-at="2017-08-10T00:27:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- mmm.Smoke -->
+      <class name="mmm.Regression">
+        <test-method status="PASS" signature="f()[pri:0, instance:mmm.Regression@29774679]" name="f" duration-ms="15" started-at="2017-08-10T00:27:24Z" finished-at="2017-08-10T00:27:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- mmm.Regression -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
