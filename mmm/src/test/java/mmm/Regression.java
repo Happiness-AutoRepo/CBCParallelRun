@@ -25,7 +25,7 @@ public class Regression {
 	@Test(groups = {"Regression"})
 	public void f() throws InterruptedException {
 		driver.findElement(By.id("lst-ib")).sendKeys("How much is 5 + 5?");
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 	}
 
 	@Test
