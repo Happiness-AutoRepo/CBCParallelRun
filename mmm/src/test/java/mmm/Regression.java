@@ -2,8 +2,10 @@ package mmm;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -21,10 +23,9 @@ public class Regression {
 	}
 	
 	@Test(groups = {"Regression"})
-	public void f() {
-		
-		System.out.println("Regression");
-		
+	public void f() throws InterruptedException {
+		driver.findElement(By.id("lst-ib")).sendKeys("How much is 5 + 5?");
+		Thread.sleep(5000);
 	}
 
 	@Test
@@ -32,5 +33,10 @@ public class Regression {
 
 		System.out.println("Functional");
 
+	}
+	
+	@AfterTest
+	public void tearDown() {
+		driver.quit();
 	}
 }
