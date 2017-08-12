@@ -1,4 +1,4 @@
-package mmm;
+package cfie;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
