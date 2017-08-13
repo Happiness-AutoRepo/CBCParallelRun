@@ -1,9 +1,19 @@
 package cfie;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -31,9 +41,19 @@ public class Firefox {
 	}
 	
 	@Test
-	public void FirefoxTest() throws InterruptedException {
+	public void FirefoxTest() throws InterruptedException, EncryptedDocumentException, InvalidFormatException, IOException {
 		
-		driver.findElement(By.id("lst-ib")).sendKeys("How much is 5 + 5?");
+		FileInputStream input = new FileInputStream("./src/test/resources/TestData/Book1.xlsx");
+		Workbook workbook = WorkbookFactory.create(input);
+		Sheet sheet = workbook.getSheetAt(0);
+		int rowNum = sheet.getPhysicalNumberOfRows();
+		
+		Row row = sheet.getRow(2);
+		int cellNum = row.getPhysicalNumberOfCells();
+		
+		Cell cell = row.getCell(1);
+		
+		driver.findElement(By.id("lst-ib")).sendKeys(cell.getStringCellValue());
 		Thread.sleep(4000);
 		driver.quit();
 	}
