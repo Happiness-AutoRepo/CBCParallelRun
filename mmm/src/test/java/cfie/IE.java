@@ -14,6 +14,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -52,7 +53,7 @@ public class IE {
 		
 		Cell cell = row.getCell(1);
 		
-		driver.findElement(By.id("lst-ib")).sendKeys(cell.getStringCellValue());
+		driver.findElement(By.id("lst-ib")).sendKeys(cell.getStringCellValue() + Keys.ENTER);
 		Thread.sleep(4000);
 		driver.quit();
 	}
