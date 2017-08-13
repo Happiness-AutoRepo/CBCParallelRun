@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9938" started-at="2017-08-12T07:43:22Z" finished-at="2017-08-12T07:43:32Z">
+  <suite name="Suite" duration-ms="32783" started-at="2017-08-13T18:42:14Z" finished-at="2017-08-13T18:42:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9938" started-at="2017-08-12T07:43:22Z" finished-at="2017-08-12T07:43:32Z">
-      <class name="mmm.Chrome">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:mmm.Chrome@29ca901e]" name="beforeTest" is-config="true" duration-ms="5375" started-at="2017-08-12T03:43:22Z" finished-at="2017-08-12T03:43:27Z">
+    <test name="Test" duration-ms="32783" started-at="2017-08-13T18:42:14Z" finished-at="2017-08-13T18:42:47Z">
+      <class name="cfie.Firefox">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:cfie.Firefox@192b07fd]" name="beforeTest" is-config="true" duration-ms="9156" started-at="2017-08-13T14:42:14Z" finished-at="2017-08-13T14:42:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="Chrome()[pri:0, instance:mmm.Chrome@29ca901e]" name="Chrome" duration-ms="4532" started-at="2017-08-12T03:43:27Z" finished-at="2017-08-12T03:43:32Z">
+        <test-method status="PASS" signature="FirefoxTest()[pri:0, instance:cfie.Firefox@192b07fd]" name="FirefoxTest" duration-ms="4855" started-at="2017-08-13T14:42:23Z" finished-at="2017-08-13T14:42:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Chrome -->
-      </class> <!-- mmm.Chrome -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- FirefoxTest -->
+      </class> <!-- cfie.Firefox -->
+      <class name="cfie.IE">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:cfie.IE@64bfbc86]" name="beforeTest" is-config="true" duration-ms="9464" started-at="2017-08-13T14:42:14Z" finished-at="2017-08-13T14:42:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="IETest()[pri:0, instance:cfie.IE@64bfbc86]" name="IETest" duration-ms="7682" started-at="2017-08-13T14:42:24Z" finished-at="2017-08-13T14:42:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IETest -->
+      </class> <!-- cfie.IE -->
+      <class name="cfie.Chrome">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:cfie.Chrome@20322d26]" name="beforeTest" is-config="true" duration-ms="26177" started-at="2017-08-13T14:42:14Z" finished-at="2017-08-13T14:42:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="ChromeTest()[pri:0, instance:cfie.Chrome@20322d26]" name="ChromeTest" duration-ms="6583" started-at="2017-08-13T14:42:40Z" finished-at="2017-08-13T14:42:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChromeTest -->
+      </class> <!-- cfie.Chrome -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
