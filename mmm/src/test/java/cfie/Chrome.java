@@ -56,6 +56,9 @@ public class Chrome {
 		driver.findElement(By.id("lst-ib")).sendKeys(cell.getStringCellValue() + Keys.ENTER);
 		Thread.sleep(4000);
 		driver.quit();
+		
+		input.close();
+		workbook.close();
 	}
 	
 }
