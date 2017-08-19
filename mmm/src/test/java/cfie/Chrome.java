@@ -54,7 +54,7 @@ public class Chrome {
 		Cell cell = row.getCell(1);
 		
 		driver.findElement(By.id("lst-ib")).sendKeys(cell.getStringCellValue() + Keys.ENTER);
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 		driver.quit();
 		
 		input.close();
